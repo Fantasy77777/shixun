@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>实训页面2</title>
+	<link rel="stylesheet" href="shixun2.css" type="text/css">
+	<script type="text/javascript" src="shixun2.js"></script>
+	<style>
+		body{
+			background-color: #F5DEB3;
+		}
+	</style>
+</head>
+<body onload="window_onload()">
+<input type="button" value="测试按钮" onclick="ceshi()">
+	<section>
+		<header id="div_head_.title_big">
+			<h1>编辑订单信息</h1>
+		</header>
+		<form id="form1">
+			<ul>
+				<li>
+					<ul>
+						<li id="title_1"><span>*</span><label for="tbxCode">订单编号：</label></li>
+						<li id="content_1"><input type="text" id="tbxCode" name="tbxCode" maxlength="8" placeholder="输入新的编号" autofocus required></li>
+
+						<li id="title_2"><span>*</span><label for="tbxDate">订单日期：</label></li>
+						<li id="content_2"><input type="date" id="tbxDate" name="tbxDate" maxlength="10" required></li>
+
+						<li id="title_3"><span>*</span><label for="tbxGoodsCode">商品编号：</label></li>
+						<li id="content_3"><input type="text" id="tbxGoodsCode" name="tbxGoodsCode" maxlength="12" placeholder="输入商品编号" required></li>
+					</ul>
+				</li>
+			
+				<li>
+					<ul>
+						<li id="title_4"><label for="tbxBrandName">商品类：</label></li>
+						<li id="content_4"><input type="text" id="tbxBrandName" name="tbxBrandName" maxlength="50"></li>
+
+						<li id="title_5"><label for="tbxNum">数量：</label></li>
+						<li id="content_5"><input type="number" id="tbxNum" name="tbxNum" maxlength="6" value="0" placeholder="输入整数" required onblur="tbxNum_onblur()"></li>
+
+						<li id="title_6"><label for="tbxPrice">单价：</label></li>
+						<li id="content_6"><input type="text" id="tbxPrice" name="tbxPrice" maxlength="6" value="0" placeholder="输入单价" required onblur="tbxPrice_onblur()"></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li id="title_7"><label for="tbxMoney">金额：</label></li>
+						<li id="content_7"><input type="text" id="tbxMoney" name="tbxMoney" readonly="readonly" placeholder="自动计算"></li>
+
+						<li id="title_8"><label for="tbxPersonName">负责人：</label></li>
+						<li id="content_8"><input type="text" id="tbxPersonName" name="tbxPersonName" maxlength="20"></li>
+
+						<li id="title_9"><label for="tbxEmail">负责人Email：</label></li>
+						<li id="content_9"><input type="email" id="tbxEmail" name="tbxEmail" maxlength="20" placeholder="输入正确的Email地址"></li>
+					</ul>
+				</li>
+			</ul>
+			<div id="buttonDiv">
+				<input type="button" name="btnNew" id="btnNew" value="新增" onclick="btnNew_onclick();">
+				<input type="submit" name="btnAdd" id="btnAdd" value="追加" formaction="javascript:btnAdd_onclick();">
+				<input type="submit" name="btnUpdate" id="btnUpdate" value="修改"  formaction="javascript:btnUpdate_onclick();"> 
+				<input type="button" name="btnDelete" id="btnDelete" value="删除"  onclick="btnDelete_onclick();">
+				<input type="button" name="btnClear" id="btnClear" value="清除" onclick="btnClear_onclick();">
+			</div>
+		</form>
+
+		<section>
+			<section>
+				<header id="div_head_title_big">
+					<h1>订单信息一览表</h1>
+				</header>
+				<div id="infoTable">
+					<table id="datatable">
+						<tr>
+							<th>订单编号</th>
+							<th>订单日期</th>
+							<th>商品编号</th>
+							<th>商品类</th>
+							<th>数量</th>
+							<th>单价</th>
+							<th>金额</th>
+							<th>负责人</th>
+							<th>负责人Email</th>
+						</tr>
+					</table>
+				</div>
+			</section>
+		</section>
+	</section>
+</body>
+</html>

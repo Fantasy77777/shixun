@@ -1,0 +1,131 @@
+body{
+	margin-left: 0px;
+	margin-top: 15px;
+}
+ul{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin:0px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+ul li ul{
+	display: flex;
+	flex-direction: row;
+}
+h1{
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background-color: #7088AD;
+	text-align: left;
+	padding-left: 10px;
+	display: block;
+	width: 99%;
+	margin:0px;
+}
+li[id^=title]{
+	font-size: 12px;
+	color: #333333;
+	background-color: #E6E6E6;
+	text-align: right;
+	padding-right: 5px;
+	flex:1;
+}
+li[id^=content]{
+	height: 22px;
+	background-color: #FAFAFA;
+	text-align: left;
+	padding-left: 2px;
+	flex: 2;
+}
+span{
+	color: #ff0000;
+}
+input{
+	width: 95%;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #426C7C;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #426C7C;
+	border:1px solid #0066cc;
+	height: 18px;
+}
+/*input:read-only{
+	background-color: yellow;
+
+}*/
+input:-moz-read-only{
+	background-color: yellow;
+}
+input:-webkit-read-only{
+	background-color: yellow;
+}
+input:-o-read-only{
+	background-color: yellow;
+}
+input #tbxNum{
+	text-align: right;
+}
+input #tbxPrice{
+	text-align: right;
+}
+input #tbxMoney{
+	text-align: right;
+}
+div{
+	text-align: right;
+}
+div #buttonDiv{
+	width: 100%;
+}
+input[type="button"],input[type="submit"]{
+	font-size: 12px;
+	width: 100px;
+	height: 25px;
+	cursor: hand;
+	margin:10px auto;
+	font-family: 宋体;
+	color: black;
+}
+div #infoTable{
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+ table{
+	width: 100%;
+	background-color: white;
+	cellpadding:1;
+	cellspacing:1;
+	font-size: 12px;
+	text-align: center;
+}
+th{
+	height: 22px;
+	background-color: #7088AD;
+	color: #FFFFFF;
+	width: 8%;
+}
+tr{
+	height: 30px;
+}
+tr:nth-child(odd){
+	background-color: #E6E6E6;
+	color: #333333;
+}
+tr:nth-child(even){
+	background-color: #fafafa;
+	color: black;
+}
+tr:nth-child(1){
+	background-color: #7088AD;
+	color: #FFFFFF;
+}

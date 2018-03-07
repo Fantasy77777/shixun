@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv=“X-UA-Compatible” content=“chrome=1″ />    
+    <title>2017年实训作业</title>
+    <link rel="stylesheet" href="shixun.css" type="text/css">
+    <script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="shixun.js"></script>
+</head>
+<body>
+    <header>
+    	<h1>张俊薪实训大作业</h1><br>
+    	<marquee behavior="alternate" direction="left" scrollamount="10" scrolldelay="80" loop="30" bgcolor="orange" height=88px; >
+    			<h2>web订单信息系统</h2>
+    	</marquee>
+    </header><br><br>
+    	<div class="message">
+			用户名：
+				<input type="text" placeholder="请输入用户名" id="username" autofocus="autofocus"><br><br>
+			密&nbsp;&nbsp;&nbsp;码：
+				<input type="password" id="userpassword" placeholder="请输入密码" >
+    	</div><br>
+    	<div class="button">
+    	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" value="注&nbsp;册" class="button1" id="button1" ><!-- onclick="openregister()" -->
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" value="登&nbsp;录" class="button2" id="button2">
+    	</div>
+    	<!-- 遮罩层 -->
+    	<div id="test"></div>
+    	<div id="register" class="register">
+    		<span>注册页面</span>
+			<a href="" class="close" id="close">关闭</a><br><br>
+			注册账号：<input type="text" class="register-user" id="name" autofocus="autofocus" placeholder="请输入注册账号"><br><br><br>
+			注册密码：<input type="password" class="password1" id="password1" placeholder="请输入密码"><br><br><br>
+			重复密码：<input type="password" class="password2" id="password2" placeholder="请再次输入密码"><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" value="确定注册" id="sure">
+		</div>
+</body>
+</html>
